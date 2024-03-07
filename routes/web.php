@@ -13,6 +13,58 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// rotta home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// rotta characters
+Route::get('/characters', function () {
+    return view('header_menu/characters');
+});
+
+// rotta collectibles
+Route::get('/colectibles', function () {
+    return view('header_menu/collectibles');
+});
+
+// rotta comics
+Route::get('/comics', function () {
+    return view('header_menu/comics');
+});
+
+// rotta fans
+Route::get('/fans', function () {
+    return view('header_menu/fans');
+});
+
+// rotta games
+Route::get('/games', function () {
+    return view('header_menu/games');
+});
+
+// rotta movies
+Route::get('/movies', function () {
+    return view('header_menu/movies');
+});
+
+// rotta news
+Route::get('/news', function () {
+    return view('header_menu/news');
+});
+
+// rotta shop
+Route::get('/shop', function () {
+    return view('header_menu/shop');
+});
+
+// rotta tv
+Route::get('/tv', function () {
+    return view('header_menu/tv');
+});
+
+// rotta videos
+Route::get('/videos', function () {
+    return view('header_menu/videos');
 });
