@@ -1,3 +1,7 @@
+ul {
+    padding: 0;
+}
+
 .upper-footer {
     background-image: url("/img/footer-bg.jpg");
     height: 400px;
@@ -22,12 +26,14 @@
         }
 
         img {
-            width: 50%;
+            width: 45%;
+
         }
     }
 }
 
 .lower-footer {
+    margin: 0;
     height: 100px;
     width: 100%;
     background-color: rgb(68, 67, 67);

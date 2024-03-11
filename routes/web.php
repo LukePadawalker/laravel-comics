@@ -68,3 +68,10 @@ Route::get('/tv', function () {
 Route::get('/videos', function () {
     return view('header_menu/videos');
 });
+
+// rotta product
+Route::get('/products/{id}', function ($index) {
+    $products = config('comics');
+
+    return view('product', ['product' => $products[$index]]);
+});
