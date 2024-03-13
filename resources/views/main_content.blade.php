@@ -6,9 +6,11 @@
         <div class="movies-container">
             @foreach(config('comics') as $comic)
             <div class="movie-card">
-                <a href="{{ url('product/0')}}"></a>
-                <img src="{{$comic['thumb']}}" alt="">
-                <p>{{ $comic['title']}}</p>
+                <a href="{{ url('products/{$comic[index]}')}}">
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <p>{{ $comic['title']}}</p>
+            
+                </a>
             </div>
             @endforeach
         </div>

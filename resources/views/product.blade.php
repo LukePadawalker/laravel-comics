@@ -1,1 +1,1 @@
-<p>ma bate vantu'n fata</p>
+<p>PRODUCT PAGE</p>

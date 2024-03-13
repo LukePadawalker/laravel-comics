@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 // rotta characters
 Route::get('/characters', function () {
-    return view('header_menu/characters');
+    return view('header_menu.characters');
 });
 
 // rotta collectibles
@@ -73,5 +73,5 @@ Route::get('/videos', function () {
 Route::get('/products/{id}', function ($index) {
     $products = config('comics');
 
-    return view('product', ['product' => $products[$index]]);
+    return view('product', compact('products'));
 });
